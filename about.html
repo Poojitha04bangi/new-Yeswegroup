@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+            /* Style for the centered container */
+            .centred {
+              text-align: center;
+            }
+          
+            /* Style for the header */
+            .centred h2 {
+              font-weight: 700;
+              padding-top: 60px;
+              /* padding-bottom: 50px; */
+              position: relative;
+              display: inline-block;
+            }
+          
+            /* Style for the underline on hover */
+            .centred h2::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              background-color: brown; /* Change this to your desired color */
+              bottom: 0;
+              left: 0;
+              transform: scaleX(0);
+              transform-origin: bottom left;
+              transition: transform 0.3s ease;
+            }
+          
+            .centred h2:hover::before {
+              transform: scaleX(1);
+            }
+          
+            /* Style for the paragraph */
+            .centred p {
+              font-weight: 550;
+            }
+    </style>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -71,7 +109,7 @@
 
         <!-- main header -->
         <header class="main-header">
-            <div class="header-top">
+            <!-- <div class="header-top">
                 <div class="top-inner">
                     <ul class="left-info">
                         <li>
@@ -105,7 +143,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="header-lower">
                 <div class="outer-box clearfix">
                     <div class="menu-area pull-left clearfix">
@@ -119,7 +157,7 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="dropdown"><a href="index.html">Home</a>
+                                    <!-- <li class="dropdown"><a href="index.html">Home</a>
                                         <ul>
                                             <li><a href="index.html">Home Page 01</a></li>
                                             <li><a href="index-2.html">Home Page 02</a></li>
@@ -239,12 +277,27 @@
                                                 </div>                                   
                                             </div>                                       
                                         </div>
-                                    </li> 
-                                    <li><a href="contact.html">Contact</a></li>               
-                                </ul>
+                                    </li>  -->
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li class="dropdown">
+                                      <a href="index.html">career</a>
+                                      <ul>
+                                        <li><a href="about.html">About Company</a></li>
+                                        <li><a href="team.html">Meet Our Team</a></li>
+                                        <li><a href="about.html">About Company</a></li>
+                                        <li><a href="team.html">Meet Our Team</a></li>
+                                        <li><a href="about.html">About Company</a></li>
+                                        <li><a href="team.html">Meet Our Team</a></li>
+                                      </ul>
+                                    </li>
+                                    <li><a href="clients-element.html">Clients</a></li>
+                                    <li><a href="contact.html">contact us</a></li>
+                                  </ul>
+                                </div>
+                              </nav>
                             </div>
-                        </nav>
-                    </div>
                     <ul class="menu-right-content pull-right clearfix">
                         <li>
                             <div class="search-btn">
@@ -351,13 +404,13 @@
                 <div class="content-box">
                     <div class="title-box centred">
                         <h1>About Company</h1>
-                        <p>Reliable & Cost Efficient Recruitment Agency Based On Los Angeles</p>
+                        <p>Staffing and Hiring Agency</p>
                     </div>
-                    <ul class="bread-crumb clearfix">
+                    <!-- <ul class="bread-crumb clearfix">
                         <li><a href="index.html">Home</a></li>
                         <li>About</li>
                         <li>About Company</li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </section>
@@ -373,12 +426,12 @@
                             <div id="image_block_1">
                                 <div class="image-box">
                                     <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-14.png);"></div>
-                                    <div class="video-inner" style="background-image: url(assets/images/resource/video-bg-1.jpg);">
+                                    <!-- <div class="video-inner" style="background-image: url(assets/images/resource/video-bg-1.jpg);">
                                         <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="lightbox-image video-btn" data-caption="">
                                             <i class="flaticon-play"></i>
                                         </a>
                                         <div class="border"></div>
-                                    </div>
+                                    </div> -->
                                     <figure class="image-1"><img src="assets/images/resource/about-2.jpg" alt=""></figure>
                                     <figure class="image-2 wow slideInLeft animated animated" data-wow-delay="00ms"><img src="assets/images/resource/briefcase-1.png" alt=""></figure>
                                 </div>
@@ -389,12 +442,20 @@
                                 <div class="content-box">
                                     <div class="sec-title">
                                         <span class="top-title">About Our Agency</span>
-                                        <h2>Reliable & Cost Efficiant Recruitment Agency</h2>
+                                        <h2>Staffing and Hiring Agency</h2>
                                     </div>
                                     <div class="text">
-                                        <p>Long established fact that reader will be distracted the readable of pages when looking at its layout. The point using lorem ipsum has a more-or-less normal distribution of letters.</p>
+                                        <p>Yeswe does more than just give business advice. Our consultants help implement long-term and sustainable
+                                             changes that provide tangible business improvements and a strong return on investment to your software
+                                              investments.
+                                        </p><br>
+                                        <p>Promoted by various highly experienced technocrats associated with some of the Top 10 Fortune 500 
+                                            companies, we deliver expert IT staffing solutions focused on software selection, program management, 
+                                            business process improvement, and organizational change management related to ERP, database, and web
+                                             technologies. 
+                                        </p>
                                     </div>
-                                    <div class="author-box">
+                                    <!-- <div class="author-box">
                                         <div class="author-text">
                                             <h3>Pathway for both employer and employee.</h3>
                                         </div>
@@ -404,7 +465,7 @@
                                             <span class="designation">Founder</span>
                                             <figure class="signature"><img src="assets/images/icons/signature-1.png" alt=""></figure>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -416,7 +477,7 @@
 
 
         <!-- process-style-two -->
-        <section class="process-style-two alternet-2">
+        <!-- <section class="process-style-two alternet-2">
             <div class="auto-container">
                 <div class="inner-container">
                     <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-36.png);"></div>
@@ -464,7 +525,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- process-style-two end -->
 
 
@@ -487,60 +548,62 @@
                             </figure>
                             <div class="content-box">
                                 <div class="dots-box active"></div>
-                                <div class="year-box">
+                                <!-- <div class="year-box">
                                     <h3>2010</h3>
                                     <div class="pattern-1" style="background-image: url(assets/images/shape/pattern-37.png);"></div>
                                     <div class="pattern-2" style="background-image: url(assets/images/shape/pattern-38.png);"></div>
-                                </div>
+                                </div> -->
                                 <div class="text">
-                                    <h3>Fast Growing Company</h3>
-                                    <p>To take a trivial example, which of us ever undertake laborius physical exercise except to obtain some advantage from it.</p>
+                                    <!-- <h3>Fast Growing Company</h3> -->
+                                    <p>Based in Dallas, TX  Yeswe specializes in staffing, design, development, and maintenance of high-end business-enabling IT systems.
+                                    We skillfully bridge the gap between your business needs and the professional experts perfectly suited for them. Whether your goals are to reduce customer response times and operating costs, or increase revenue, 
+                                    </p>
                                 </div>
                             </div>
-                            <figure class="image-box ">
+                            <!-- <figure class="image-box ">
                                 <img src="assets/images/resource/history-2.jpg" alt="">
                                 <div class="dots-box"></div>
-                            </figure>
+                            </figure> -->
                             <div class="content-box mr-0">
                                 <div class="dots-box"></div>
-                                <div class="year-box">
+                                <!-- <div class="year-box">
                                     <h3>2014</h3>
                                     <div class="pattern-1" style="background-image: url(assets/images/shape/pattern-37.png);"></div>
                                     <div class="pattern-2" style="background-image: url(assets/images/shape/pattern-38.png);"></div>
-                                </div>
-                                <div class="text">
+                                </div> -->
+                                <!-- <div class="text">
                                     <h3>1000 Companies Tie-up</h3>
                                     <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and account.</p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12 column">
                         <div class="inner-box">
                             <div class="content-box">
-                                <div class="year-box">
-                                    <h3>2008</h3>
+                                <!-- <div class="year-box">
+                                    <h3>2016</h3>
                                     <div class="pattern-1" style="background-image: url(assets/images/shape/pattern-37.png);"></div>
                                     <div class="pattern-2" style="background-image: url(assets/images/shape/pattern-38.png);"></div>
-                                </div>
+                                </div> -->
                                 <div class="text">
-                                    <h3>Started in Houston</h3>
-                                    <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and account.</p>
+                                    <h3>Who We Are?</h3>
+                                    <p>YesWe was formed in 2016  as a strong technology and staffing company leveraging the experience and expertise of the founders who has 40 years of Industry experience collectively. Combined with our deep knowledge of business applications, delivery model and implementation standards, we have come up with a solid methodology for execution.More importantly we were able to channel this expertise through out the company and establish a strong leveraged model. We achieved 100% growth year over year since inception in terms of Customers, Employees and Revenue.
+                                    </p>
                                 </div>
                             </div>
                             <figure class="image-box"><img src="assets/images/resource/history-3.jpg" alt=""></figure>
                             <div class="content-box">
-                                <div class="year-box">
+                                <!-- <div class="year-box">
                                     <h3>2011</h3>
                                     <div class="pattern-1" style="background-image: url(assets/images/shape/pattern-37.png);"></div>
                                     <div class="pattern-2" style="background-image: url(assets/images/shape/pattern-38.png);"></div>
-                                </div>
+                                </div> -->
                                 <div class="text">
-                                    <h3>Best Staffing Talent Award </h3>
-                                    <p>To take a trivial example, which of us ever undertake laborius physical exercise except to obtain some advantage from it.</p>
+                                    <p></p>
                                 </div>
                             </div>
-                            <figure class="image-box mr-0"><img src="assets/images/resource/history-4.jpg" alt=""></figure>
+                            <!-- <figure class="image-box mr-0"><img src="assets/images/resource/history-4.jpg" alt=""></figure> -->
                         </div>
                     </div>
                 </div>
@@ -548,9 +611,43 @@
         </section>
         <!-- history-section end -->
 
+        <div class="centred" style="padding-bottom: 60px;">
+            <!-- <span class=" sec-title top-title" style="padding-top: 40px; font-weight: 700;">Welcome to Yes We Group</span> -->
+            <h1>Why Yes We?</h1> 
+            <h2>Quality</h2>
+            <!-- <h2>Hiring And Staffing Agency</h2> -->
+            <div class="text" > <p style="font-weight: 550;">
+                You define the quality standards by which Yeswe measures each job applicant. Based on your expectations,
+                 <br> Yeswe orchestrates the intense process of interviewing, testing and referencing. To this end, <br>
+                 we consistently provide job candidates who are of tremendous value to our clients' organizations.
+            </p>
+        </div>
+
+            <h2>Response Time</h2>
+            <!-- <h2>Hiring And Staffing Agency</h2> -->
+            <p style="font-weight: 550;">
+                Yeswe works at a fast-pace-for leaders with urgent staffing needs as well as job applicants who want to be<br>
+                 considered first for new employment opportunities.
+            </p>
+
+            <h2>Rates</h2>
+            <!-- <h2>Hiring And Staffing Agency</h2> -->
+            <p style="font-weight: 550;">
+                Yeswe goal is to provide the best value for its clients' valued Budget.<br> To do so, we will match or beat the bill rates of most competitors.
+
+            </p>
+
+            <h2>Team</h2>
+            <!-- <h2>Hiring And Staffing Agency</h2> -->
+            <p style="font-weight: 550;">
+                The success of our company lies in the talented hands of our team. Our consultants hold advanced<br>
+                 qualifications in their respective fields. They possess in-depth knowledge in the present technologies and IT tools. 
+            </p>
+        </div>
+
 
         <!-- team-section -->
-        <section class="team-section bg-color-2">
+        <!-- <section class="team-section bg-color-2">
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-12 col-sm-12 experience-column">
@@ -666,15 +763,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- team-section end -->
 
 
         <!-- awards-section -->
-        <section class="awards-section">
+        <!-- <section class="awards-section">
             <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-10.png);"></div>
-            <div class="auto-container">
-                <div class="sec-title centred">
+            <div class="auto-container"> -->
+                <!-- <div class="sec-title centred">
                     <span class="top-title">Our Excellence</span>
                     <h2>Awards & Major Achievements</h2>
                     <p>Long established fact that a reader will be distracted by the <br />readable content of a page.</p>
@@ -707,11 +804,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 image-column">
+                    </div> -->
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 image-column">
                         <figure class="image-box js-tilt"><img src="assets/images/resource/award-1.png" alt=""></figure>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 inner-column">
+                    </div> -->
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 inner-column">
                         <div class="inner-block">
                             <div class="single-award-block">
                                 <div class="inner-box">
@@ -741,7 +838,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- awards-section end -->
 
 
